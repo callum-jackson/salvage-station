@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://c5gouy88lpkyh"]
+
+[ext_resource type="Script" uid="uid://rxrxf1ejh4i0" path="res://scripts/main.gd" id="1_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://11fa8suln26r" path="res://scenes/player.tscn" id="1_lp803"]
+[ext_resource type="PackedScene" uid="uid://cyx7no4d5jhbv" path="res://scenes/fuel_cell.tscn" id="2_0wfyh"]
+[ext_resource type="PackedScene" uid="uid://blq3b56x3c6mm" path="res://scenes/exit.tscn" id="3_sugp2"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_jyhfs")
+
+[node name="Player" parent="." instance=ExtResource("1_lp803")]
+position = Vector2(149, 209)
+
+[node name="Exit" parent="." instance=ExtResource("3_sugp2")]
+position = Vector2(433, 432)
+
+[node name="FuelCell" parent="." instance=ExtResource("2_0wfyh")]
+position = Vector2(299, 263)
+
+[node name="FuelCell2" parent="." instance=ExtResource("2_0wfyh")]
+position = Vector2(286, 396)
+
+[node name="FuelCell3" parent="." instance=ExtResource("2_0wfyh")]
+position = Vector2(512, 295)
+
+[node name="FuelCell4" parent="." instance=ExtResource("2_0wfyh")]
+position = Vector2(127, 404)
+
+[node name="FuelCell5" parent="." instance=ExtResource("2_0wfyh")]
+position = Vector2(455, 204)
