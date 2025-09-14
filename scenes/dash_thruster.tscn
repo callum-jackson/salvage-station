@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bclehqt5uo0li"]
+
+[ext_resource type="Texture2D" uid="uid://cnk38fpooh38v" path="res://assets/sprites/Placeholder Sprites/Rhombus/Rhombus-0005.png" id="1_fmuuq"]
+[ext_resource type="Script" uid="uid://c1ghwx0gho6re" path="res://scripts/dash_thruster.gd" id="1_qpnbo"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qpnbo"]
+radius = 7.06876
+height = 22.4998
+
+[node name="DashThruster" type="Area2D"]
+script = ExtResource("1_qpnbo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_fmuuq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-5.96046e-08, 0)
+rotation = 1.5712
+shape = SubResource("CapsuleShape2D_qpnbo")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
