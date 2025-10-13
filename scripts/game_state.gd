@@ -1,3 +1,3 @@
 extends Node
 
-var has_thruster: bool = false
+var has_thrusters

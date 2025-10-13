@@ -1,21 +1,58 @@
-[gd_scene load_steps=4 format=3 uid="uid://cyx7no4d5jhbv"]
+[gd_scene load_steps=9 format=3 uid="uid://cyx7no4d5jhbv"]
 
 [ext_resource type="Script" uid="uid://byhra8pem5n56" path="res://scripts/fuel_cell.gd" id="1_crm1s"]
-[ext_resource type="Texture2D" uid="uid://oby415rlb6r0" path="res://assets/sprites/Placeholder Sprites/Diamond/Sprite-0004.png" id="1_q474e"]
+[ext_resource type="Texture2D" path="res://assets/sprites/fuel_cell_idle.png" id="2_crm1s"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qufuo"]
-size = Vector2(21.1902, 21.2362)
+[sub_resource type="AtlasTexture" id="AtlasTexture_crm1s"]
+atlas = ExtResource("2_crm1s")
+region = Rect2(0, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ob7pv"]
+atlas = ExtResource("2_crm1s")
+region = Rect2(8, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_47yqb"]
+atlas = ExtResource("2_crm1s")
+region = Rect2(16, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jp7nj"]
+atlas = ExtResource("2_crm1s")
+region = Rect2(24, 0, 8, 8)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h63ku"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_crm1s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ob7pv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_47yqb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jp7nj")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_75h8v"]
+size = Vector2(4, 6)
 
 [node name="FuelCell" type="Area2D" groups=["fuel_cells"]]
 script = ExtResource("1_crm1s")
 metadata/_edit_group_ = true
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_q474e")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_h63ku")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.314537
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-6.55651e-07, 5.18668e-09)
-rotation = 0.786482
-shape = SubResource("RectangleShape2D_qufuo")
+shape = SubResource("RectangleShape2D_75h8v")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
