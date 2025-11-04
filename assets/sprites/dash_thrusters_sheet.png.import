@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bowykq6fvfh21"
-path="res://.godot/imported/player_dash.png-85ba3007d832882676cf8ee116fea155.ctex"
+uid="uid://bw6xn1ytrgtpq"
+path="res://.godot/imported/dash_thrusters_sheet.png-b63f92913160ed861913871a7020577f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/player_dash.png"
-dest_files=["res://.godot/imported/player_dash.png-85ba3007d832882676cf8ee116fea155.ctex"]
+source_file="res://assets/sprites/dash_thrusters_sheet.png"
+dest_files=["res://.godot/imported/dash_thrusters_sheet.png-b63f92913160ed861913871a7020577f.ctex"]
 
 [params]
 

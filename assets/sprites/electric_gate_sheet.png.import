@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djt55h04p7kby"
-path="res://.godot/imported/player_idle_thrusters.png-d4fd31022212f244e9e14c958247ca99.ctex"
+uid="uid://cb1daiwbelyyv"
+path="res://.godot/imported/electric_gate_sheet.png-02654e40d7ed351c9e62da27d6a1fb43.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/player_idle_thrusters.png"
-dest_files=["res://.godot/imported/player_idle_thrusters.png-d4fd31022212f244e9e14c958247ca99.ctex"]
+source_file="res://assets/sprites/electric_gate_sheet.png"
+dest_files=["res://.godot/imported/electric_gate_sheet.png-02654e40d7ed351c9e62da27d6a1fb43.ctex"]
 
 [params]
 

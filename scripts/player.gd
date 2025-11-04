@@ -9,7 +9,7 @@ var current_speed
 func _ready() -> void:
 	screen_size = get_viewport_rect().size
 	
-func _process(delta: float) -> void:
+func _physics_process(delta: float) -> void:
 	var velocity = Vector2.ZERO
 	
 	if Input.is_action_pressed("move_right"):

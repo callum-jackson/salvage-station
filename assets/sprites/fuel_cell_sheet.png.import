@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dv41537s6ra6r"
-path="res://.godot/imported/wall.png-a2b2dda47b1ed3651589e27171e28380.ctex"
+uid="uid://c07rxkunts7kn"
+path="res://.godot/imported/fuel_cell_sheet.png-cbfcbc5d197fa2351148934518d6728f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/wall.png"
-dest_files=["res://.godot/imported/wall.png-a2b2dda47b1ed3651589e27171e28380.ctex"]
+source_file="res://assets/sprites/fuel_cell_sheet.png"
+dest_files=["res://.godot/imported/fuel_cell_sheet.png-cbfcbc5d197fa2351148934518d6728f.ctex"]
 
 [params]
 

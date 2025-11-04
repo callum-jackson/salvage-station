@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cj0xmcn3bodib"
-path="res://.godot/imported/fuel_cell_idle.png-83dbda075bb6542c0c1958a17b6060a0.ctex"
+uid="uid://bi3rgqflmea03"
+path="res://.godot/imported/tilesheet.png-e934876da40351657406b0e03144b2dc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/fuel_cell_idle.png"
-dest_files=["res://.godot/imported/fuel_cell_idle.png-83dbda075bb6542c0c1958a17b6060a0.ctex"]
+source_file="res://assets/sprites/tilesheet.png"
+dest_files=["res://.godot/imported/tilesheet.png-e934876da40351657406b0e03144b2dc.ctex"]
 
 [params]
 
