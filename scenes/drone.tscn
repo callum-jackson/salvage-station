@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://dt7h57s6bdsm7"]
+[gd_scene load_steps=7 format=3 uid="uid://dt7h57s6bdsm7"]
 
 [ext_resource type="Texture2D" uid="uid://b3ruqvkh4luxh" path="res://assets/sprites/drone_sheet.png" id="1_e1pno"]
+[ext_resource type="Script" uid="uid://5gun5hsvkyh8" path="res://scripts/drone.gd" id="1_knnud"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4niel"]
 atlas = ExtResource("1_e1pno")
@@ -28,6 +29,7 @@ animations = [{
 size = Vector2(6, 2)
 
 [node name="Drone" type="Area2D"]
+script = ExtResource("1_knnud")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ah4xt")

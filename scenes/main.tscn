@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://c5gouy88lpkyh"]
+[gd_scene load_steps=12 format=4 uid="uid://c5gouy88lpkyh"]
 
 [ext_resource type="Script" uid="uid://rxrxf1ejh4i0" path="res://scripts/main.gd" id="1_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://11fa8suln26r" path="res://scenes/player.tscn" id="1_lp803"]
@@ -33,6 +33,18 @@ tile_size = Vector2i(8, 8)
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_tefeu")
 
+[sub_resource type="Curve2D" id="Curve2D_o6xl0"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 16, 94, 0, 0, 0, 0, 175, 95)
+}
+point_count = 2
+
+[sub_resource type="Curve2D" id="Curve2D_tipki"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 93, 26, 0, 0, 0, 0, 93, 94)
+}
+point_count = 2
+
 [node name="Main" type="Node"]
 script = ExtResource("1_jyhfs")
 
@@ -46,23 +58,41 @@ position = Vector2(32, 32)
 [node name="DashThruster" parent="." instance=ExtResource("3_sugp2")]
 position = Vector2(112, 54)
 
-[node name="FuelCell" parent="." instance=ExtResource("4_jyhfs")]
+[node name="FuelCell01" parent="." instance=ExtResource("4_jyhfs")]
 position = Vector2(143, 57)
 
-[node name="FuelCell2" parent="." instance=ExtResource("4_jyhfs")]
+[node name="FuelCell02" parent="." instance=ExtResource("4_jyhfs")]
 position = Vector2(78, 85)
 
-[node name="FuelCell3" parent="." instance=ExtResource("4_jyhfs")]
+[node name="FuelCell03" parent="." instance=ExtResource("4_jyhfs")]
 position = Vector2(35, 78)
 
-[node name="FuelCell4" parent="." instance=ExtResource("4_jyhfs")]
+[node name="FuelCell04" parent="." instance=ExtResource("4_jyhfs")]
 position = Vector2(120, 23)
 
-[node name="FuelCell5" parent="." instance=ExtResource("4_jyhfs")]
+[node name="FuelCell05" parent="." instance=ExtResource("4_jyhfs")]
 position = Vector2(65, 46)
 
 [node name="Exit" parent="." instance=ExtResource("5_tbgi4")]
 position = Vector2(176, 4)
 
-[node name="Drone" parent="." instance=ExtResource("7_o6xl0")]
-position = Vector2(64, 26)
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_o6xl0")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2(16, 94)
+rotation = 0.00628923
+rotates = false
+
+[node name="Drone" parent="Path2D/PathFollow2D" instance=ExtResource("7_o6xl0")]
+
+[node name="Path2D2" type="Path2D" parent="."]
+curve = SubResource("Curve2D_tipki")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D2"]
+position = Vector2(93, 26)
+rotation = 1.5708
+rotates = false
+
+[node name="Drone" parent="Path2D2/PathFollow2D" instance=ExtResource("7_o6xl0")]
+rotation = 4.71239
