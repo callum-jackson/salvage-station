@@ -41,7 +41,7 @@ point_count = 2
 
 [sub_resource type="Curve2D" id="Curve2D_tipki"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 93, 26, 0, 0, 0, 0, 93, 94)
+"points": PackedVector2Array(0, 0, 0, 0, 157, 51, 0, 0, 0, 0, 157, 118)
 }
 point_count = 2
 
@@ -87,9 +87,12 @@ rotates = false
 [node name="Drone" parent="Path2D/PathFollow2D" instance=ExtResource("7_o6xl0")]
 
 [node name="Path2D2" type="Path2D" parent="."]
+position = Vector2(4, -28)
 curve = SubResource("Curve2D_tipki")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D2"]
-position = Vector2(93, 26)
-rotation = 1.5708
+position = Vector2(157, 51)
+rotation = 0.00628923
 rotates = false
+
+[node name="Drone" parent="Path2D2/PathFollow2D" instance=ExtResource("7_o6xl0")]

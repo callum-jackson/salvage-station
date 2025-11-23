@@ -18,3 +18,9 @@ func _physics_process(delta):
 			direction = -1
 		elif path_follow.progress_ratio <= 0.0:
 			direction = 1
+
+func _on_body_entered(body: Node2D) -> void:
+	if body.is_in_group("player"):
+		$CollisionShape2D.set_deferred("disabled", true)
+		body.queue_free()
+		get_tree().quit()

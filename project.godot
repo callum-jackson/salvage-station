@@ -78,17 +78,18 @@ project/breakpoints={
 "res://scripts/player.gd": PackedInt32Array(0)
 }
 project/editorState=[{
-"column": 0,
-"line": 0,
+"column": 17,
+"line": 50,
 "path": "res://scripts/player.gd",
 "type": "file"
 }, {
 "column": 0,
-"line": 5,
+"line": 3,
 "path": "res://scripts/fuel_cell.gd",
 "type": "file"
 }, {
-"column": 0,
+"column": 19,
+"current": true,
 "line": 13,
 "path": "res://scripts/main.gd",
 "type": "file"
@@ -98,9 +99,8 @@ project/editorState=[{
 "path": "res://scripts/exit.gd",
 "type": "file"
 }, {
-"column": 0,
-"current": true,
-"line": 27,
+"column": 14,
+"line": 0,
 "path": "res://scripts/drone.gd",
 "type": "file"
 }]
