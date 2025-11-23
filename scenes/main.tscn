@@ -35,7 +35,7 @@ sources/1 = SubResource("TileSetAtlasSource_tefeu")
 
 [sub_resource type="Curve2D" id="Curve2D_o6xl0"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 16, 94, 0, 0, 0, 0, 175, 95)
+"points": PackedVector2Array(0, 0, 0, 0, 15, 74, 0, 0, 0, 0, 178, 74)
 }
 point_count = 2
 
@@ -80,7 +80,7 @@ position = Vector2(176, 4)
 curve = SubResource("Curve2D_o6xl0")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-position = Vector2(16, 94)
+position = Vector2(15, 74)
 rotation = 0.00628923
 rotates = false
 
@@ -93,6 +93,3 @@ curve = SubResource("Curve2D_tipki")
 position = Vector2(93, 26)
 rotation = 1.5708
 rotates = false
-
-[node name="Drone" parent="Path2D2/PathFollow2D" instance=ExtResource("7_o6xl0")]
-rotation = 4.71239

@@ -79,7 +79,7 @@ project/breakpoints={
 }
 project/editorState=[{
 "column": 0,
-"line": 8,
+"line": 0,
 "path": "res://scripts/player.gd",
 "type": "file"
 }, {
@@ -98,9 +98,9 @@ project/editorState=[{
 "path": "res://scripts/exit.gd",
 "type": "file"
 }, {
-"column": 2,
+"column": 0,
 "current": true,
-"line": 31,
+"line": 27,
 "path": "res://scripts/drone.gd",
 "type": "file"
 }]
