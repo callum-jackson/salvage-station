@@ -7,7 +7,7 @@ func _ready() -> void:
 	fuel_cells_remaining = fuel_cells.size()
 	for fuel_cell in fuel_cells:
 		fuel_cell.hit.connect(_on_fuel_cell_hit)
-	
+
 func _on_fuel_cell_hit() -> void:
 	fuel_cells_remaining -= 1
 	if fuel_cells_remaining == 0:

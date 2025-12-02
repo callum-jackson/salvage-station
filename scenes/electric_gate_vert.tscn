@@ -1,0 +1,63 @@
+[gd_scene load_steps=9 format=3 uid="uid://digk85obobp3t"]
+
+[ext_resource type="Script" uid="uid://dohcr3y6vc7ep" path="res://scripts/electric_gate.gd" id="1_kt3ql"]
+[ext_resource type="Texture2D" uid="uid://oe8y6va72flo" path="res://assets/sprites/electric_gate_vert_sheet.png" id="1_tj8os"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kt3ql"]
+atlas = ExtResource("1_tj8os")
+region = Rect2(8, 0, 8, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pjos4"]
+atlas = ExtResource("1_tj8os")
+region = Rect2(16, 0, 8, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2x71p"]
+atlas = ExtResource("1_tj8os")
+region = Rect2(24, 0, 8, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3moao"]
+atlas = ExtResource("1_tj8os")
+region = Rect2(0, 0, 8, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uxqhx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kt3ql")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pjos4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2x71p")
+}],
+"loop": true,
+"name": &"active",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3moao")
+}],
+"loop": true,
+"name": &"inactive",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tj8os"]
+size = Vector2(2, 19)
+
+[node name="ElectricGateVert" type="Area2D"]
+script = ExtResource("1_kt3ql")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_uxqhx")
+animation = &"active"
+autoplay = "active"
+frame_progress = 0.671474
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_tj8os")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

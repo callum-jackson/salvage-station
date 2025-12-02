@@ -12,7 +12,7 @@ var cooldown_timer = 0.0
 
 func _ready() -> void:
 	screen_size = get_viewport_rect().size
-	
+
 func _physics_process(delta: float) -> void:
 	if cooldown_timer > 0:
 		cooldown_timer -= delta
@@ -41,7 +41,7 @@ func _physics_process(delta: float) -> void:
 			dash_timer = dash_duration
 			game_state.dash_available = false
 			cooldown_timer = game_state.dash_cooldown_time
-		
+	
 	if velocity.length() > 0 or is_dashing:
 		if is_dashing:
 			current_speed = dash_speed

@@ -21,6 +21,4 @@ func _physics_process(delta):
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
-		$CollisionShape2D.set_deferred("disabled", true)
-		body.queue_free()
-		get_tree().change_scene_to_file("res://scenes/main.tscn")
+		get_tree().reload_current_scene()

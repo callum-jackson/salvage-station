@@ -1,0 +1,61 @@
+[gd_scene load_steps=9 format=3 uid="uid://cx3vojl7qj07d"]
+
+[ext_resource type="Texture2D" uid="uid://bhhjl2witsv20" path="res://assets/sprites/electric_gate_hori_sheet.png" id="1_6567s"]
+[ext_resource type="Script" uid="uid://dohcr3y6vc7ep" path="res://scripts/electric_gate.gd" id="1_ktjl8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ktjl8"]
+atlas = ExtResource("1_6567s")
+region = Rect2(16, 0, 16, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2oqj1"]
+atlas = ExtResource("1_6567s")
+region = Rect2(32, 0, 16, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jj754"]
+atlas = ExtResource("1_6567s")
+region = Rect2(48, 0, 16, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3a0s1"]
+atlas = ExtResource("1_6567s")
+region = Rect2(0, 0, 16, 8)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3a0s1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ktjl8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2oqj1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jj754")
+}],
+"loop": true,
+"name": &"active",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3a0s1")
+}],
+"loop": true,
+"name": &"inactive",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6567s"]
+size = Vector2(10, 2)
+
+[node name="ElectricGateHori" type="Area2D"]
+script = ExtResource("1_ktjl8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_3a0s1")
+animation = &"active"
+autoplay = "active"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_6567s")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

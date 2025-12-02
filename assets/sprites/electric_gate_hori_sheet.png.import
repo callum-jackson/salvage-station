@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bp1hr61reo2gf"
-path="res://.godot/imported/electric_gate_sheet.png-02654e40d7ed351c9e62da27d6a1fb43.ctex"
+uid="uid://bhhjl2witsv20"
+path="res://.godot/imported/electric_gate_hori_sheet.png-4c4d0a7932b22250655e71ce54d45397.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/electric_gate_sheet.png"
-dest_files=["res://.godot/imported/electric_gate_sheet.png-02654e40d7ed351c9e62da27d6a1fb43.ctex"]
+source_file="res://assets/sprites/electric_gate_hori_sheet.png"
+dest_files=["res://.godot/imported/electric_gate_hori_sheet.png-4c4d0a7932b22250655e71ce54d45397.ctex"]
 
 [params]
 
