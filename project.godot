@@ -75,6 +75,7 @@ renderer/rendering_method="mobile"
 
 project/breakpoints={
 "res://scripts/drone.gd": PackedInt32Array(),
+"res://scripts/laser_beam.gd": PackedInt32Array(),
 "res://scripts/player.gd": PackedInt32Array(0)
 }
 project/editorState=[{
@@ -89,12 +90,13 @@ project/editorState=[{
 "type": "file"
 }, {
 "column": 0,
-"line": 0,
+"line": 23,
 "path": "res://scripts/drone.gd",
 "type": "file"
 }, {
-"column": 0,
-"line": 0,
+"column": 17,
+"current": true,
+"line": 3,
 "path": "res://scripts/electric_gate.gd",
 "type": "file"
 }, {
@@ -109,7 +111,7 @@ project/editorState=[{
 "type": "file"
 }, {
 "column": 0,
-"line": 9,
+"line": 0,
 "path": "res://scripts/game_manager.gd",
 "type": "file"
 }, {
@@ -119,8 +121,22 @@ project/editorState=[{
 "type": "file"
 }, {
 "column": 0,
-"current": true,
-"line": 43,
+"line": 0,
 "path": "res://scripts/player.gd",
+"type": "file"
+}, {
+"column": 0,
+"line": 21,
+"path": "res://scripts/laser_beam.gd",
+"type": "file"
+}, {
+"column": 0,
+"line": 0,
+"path": "res://scripts/laser_beam_cont.gd",
+"type": "file"
+}, {
+"column": 44,
+"line": 23,
+"path": "res://scripts/laser_beam_sweep.gd",
 "type": "file"
 }]

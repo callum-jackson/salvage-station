@@ -1,7 +1,7 @@
 extends Area2D
 
-@export var on_duration = 2.0
-@export var off_duration = 2.0
+@export var on_duration = 10.0
+@export var off_duration = 0.1
 @export var starts_active = true
 
 var is_active = true
