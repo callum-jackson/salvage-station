@@ -10,7 +10,7 @@ script = ExtResource("1_s7ddq")
 
 [node name="Line2D" type="Line2D" parent="."]
 width = 2.0
-default_color = Color(0.90979, 0.756851, 0.439209, 1)
+default_color = Color(1.00043, 0.2276, 0.186691, 1)
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
 target_position = Vector2(200, 0)

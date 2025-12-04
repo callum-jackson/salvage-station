@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Salvage Station"
-run/main_scene="res://scenes/test_level.tscn"
+run/main_scene="res://scenes/level_01.tscn"
 config/features=PackedStringArray("4.4", "Mobile")
 boot_splash/bg_color=Color(0.141174, 0.139999, 0.139999, 1)
 config/icon="res://icon.svg"
