@@ -94,7 +94,7 @@ project/editorState=[{
 "path": "res://scripts/drone.gd",
 "type": "file"
 }, {
-"column": 17,
+"column": 0,
 "current": true,
 "line": 3,
 "path": "res://scripts/electric_gate.gd",
@@ -126,16 +126,11 @@ project/editorState=[{
 "type": "file"
 }, {
 "column": 0,
-"line": 21,
-"path": "res://scripts/laser_beam.gd",
-"type": "file"
-}, {
-"column": 0,
 "line": 0,
 "path": "res://scripts/laser_beam_cont.gd",
 "type": "file"
 }, {
-"column": 44,
+"column": 0,
 "line": 23,
 "path": "res://scripts/laser_beam_sweep.gd",
 "type": "file"
