@@ -12,6 +12,7 @@ var cooldown_timer = 0.0
 
 func _ready() -> void:
 	screen_size = get_viewport_rect().size
+	motion_mode = CharacterBody2D.MOTION_MODE_FLOATING
 
 func _physics_process(delta: float) -> void:
 	if cooldown_timer > 0:

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Salvage Station"
-run/main_scene="res://scenes/level_01.tscn"
+run/main_scene="res://scenes/level_02.tscn"
 config/features=PackedStringArray("4.4", "Mobile")
 boot_splash/bg_color=Color(0.141174, 0.139999, 0.139999, 1)
 config/icon="res://icon.svg"
@@ -94,9 +94,9 @@ project/editorState=[{
 "path": "res://scripts/drone.gd",
 "type": "file"
 }, {
-"column": 0,
+"column": 27,
 "current": true,
-"line": 3,
+"line": 2,
 "path": "res://scripts/electric_gate.gd",
 "type": "file"
 }, {
@@ -121,7 +121,7 @@ project/editorState=[{
 "type": "file"
 }, {
 "column": 0,
-"line": 0,
+"line": 14,
 "path": "res://scripts/player.gd",
 "type": "file"
 }, {

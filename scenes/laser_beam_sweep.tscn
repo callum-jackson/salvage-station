@@ -14,6 +14,7 @@ default_color = Color(1.00043, 0.2276, 0.186691, 1)
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
 target_position = Vector2(200, 0)
+collide_with_areas = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_5ua82")
