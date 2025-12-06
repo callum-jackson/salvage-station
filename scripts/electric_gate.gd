@@ -1,7 +1,7 @@
 extends Area2D
 
-@export var on_duration = 2.0
-@export var off_duration = 2.0
+@export var Pon_duration = 2.0
+@export var off_duration = 0.7
 @export var starts_active = true
 
 var is_active = true
@@ -9,7 +9,7 @@ var timer = 0.0
 
 func _ready():
 	is_active = starts_active
-	timer = on_duration if starts_active else off_duration
+	timer = Pon_duration if starts_active else off_duration
 	update_state()
 
 func _physics_process(delta):
@@ -17,7 +17,7 @@ func _physics_process(delta):
 	
 	if timer <= 0:
 		is_active = !is_active
-		timer = on_duration if is_active else off_duration
+		timer = Pon_duration if is_active else off_duration
 		update_state()
 
 func update_state() -> void:

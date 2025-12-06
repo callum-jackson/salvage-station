@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Salvage Station"
-run/main_scene="res://scenes/level_02.tscn"
+run/main_scene="res://scenes/level_03.tscn"
 config/features=PackedStringArray("4.4", "Mobile")
 boot_splash/bg_color=Color(0.141174, 0.139999, 0.139999, 1)
 config/icon="res://icon.svg"
@@ -80,23 +80,23 @@ project/breakpoints={
 }
 project/editorState=[{
 "column": 0,
-"line": 0,
+"line": 6,
 "path": "res://scripts/dash_thrusters.gd",
 "type": "file"
 }, {
 "column": 0,
-"line": 15,
+"line": 16,
 "path": "res://scripts/dash_ui.gd",
 "type": "file"
 }, {
-"column": 0,
-"line": 23,
+"column": 12,
+"current": true,
+"line": 21,
 "path": "res://scripts/drone.gd",
 "type": "file"
 }, {
-"column": 27,
-"current": true,
-"line": 2,
+"column": 0,
+"line": 22,
 "path": "res://scripts/electric_gate.gd",
 "type": "file"
 }, {
@@ -116,12 +116,12 @@ project/editorState=[{
 "type": "file"
 }, {
 "column": 0,
-"line": 0,
+"line": 4,
 "path": "res://scripts/game_state.gd",
 "type": "file"
 }, {
 "column": 0,
-"line": 14,
+"line": 0,
 "path": "res://scripts/player.gd",
 "type": "file"
 }, {
