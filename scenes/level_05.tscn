@@ -1,17 +1,13 @@
-[gd_scene load_steps=18 format=4 uid="uid://c0m5lmuhexfrs"]
+[gd_scene load_steps=8 format=4 uid="uid://c11wabdlsdk57"]
 
-[ext_resource type="Script" uid="uid://rxrxf1ejh4i0" path="res://scripts/game_manager.gd" id="1_22m3q"]
-[ext_resource type="Texture2D" uid="uid://bi3rgqflmea03" path="res://assets/sprites/tilesheet.png" id="2_oqick"]
-[ext_resource type="PackedScene" uid="uid://11fa8suln26r" path="res://scenes/player.tscn" id="3_nmhu5"]
-[ext_resource type="PackedScene" uid="uid://blq3b56x3c6mm" path="res://scenes/exit.tscn" id="4_paijv"]
-[ext_resource type="Script" uid="uid://yw6ljk7oayyd" path="res://scripts/dash_ui.gd" id="5_ottsx"]
-[ext_resource type="PackedScene" uid="uid://dt7h57s6bdsm7" path="res://scenes/drone.tscn" id="6_8f2ro"]
-[ext_resource type="PackedScene" uid="uid://digk85obobp3t" path="res://scenes/electric_gate_vert.tscn" id="7_gqlbh"]
-[ext_resource type="PackedScene" uid="uid://cx3vojl7qj07d" path="res://scenes/electric_gate_hori.tscn" id="8_7fv2j"]
-[ext_resource type="PackedScene" uid="uid://cyx7no4d5jhbv" path="res://scenes/fuel_cell.tscn" id="9_r75pg"]
+[ext_resource type="Script" uid="uid://rxrxf1ejh4i0" path="res://scripts/game_manager.gd" id="1_g5e2b"]
+[ext_resource type="Texture2D" uid="uid://bi3rgqflmea03" path="res://assets/sprites/tilesheet.png" id="2_m5tnv"]
+[ext_resource type="PackedScene" uid="uid://11fa8suln26r" path="res://scenes/player.tscn" id="3_lepkc"]
+[ext_resource type="PackedScene" uid="uid://blq3b56x3c6mm" path="res://scenes/exit.tscn" id="4_pojnb"]
+[ext_resource type="Script" uid="uid://yw6ljk7oayyd" path="res://scripts/dash_ui.gd" id="5_rt7wb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tefeu"]
-texture = ExtResource("2_oqick")
+texture = ExtResource("2_m5tnv")
 texture_region_size = Vector2i(8, 8)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_3/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
@@ -35,53 +31,17 @@ tile_size = Vector2i(8, 8)
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_tefeu")
 
-[sub_resource type="Curve2D" id="Curve2D_xte1k"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 12, -48)
-}
-point_count = 2
-
-[sub_resource type="Curve2D" id="Curve2D_8idsu"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 24, 24, 0, 0, 0, 0, 24, 72)
-}
-point_count = 2
-
-[sub_resource type="Curve2D" id="Curve2D_22m3q"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -12, 0, 0, 0, 0, 72, -12, 0, 0, 0, 0, 72, 12, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0)
-}
-point_count = 6
-
-[sub_resource type="Curve2D" id="Curve2D_oqick"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 0, -12, 0, 0, 0, 0, 0, -24, 0, 0, 0, 0, -72, -24, 0, 0, 0, 0, -72, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -12)
-}
-point_count = 6
-
-[sub_resource type="Curve2D" id="Curve2D_nmhu5"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 144, 0)
-}
-point_count = 2
-
-[sub_resource type="Curve2D" id="Curve2D_paijv"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -144, 0)
-}
-point_count = 2
-
-[node name="Level04" type="Node"]
-script = ExtResource("1_22m3q")
+[node name="Level05" type="Node"]
+script = ExtResource("1_g5e2b")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAAAAA0AAQAAAAIAAAAXAA0AAQACAAIAAAABAA0AAQABAAAAAAACAA0AAQABAAAAAAADAA0AAQABAAAAAAAEAA0AAQABAAAAAAAFAA0AAQABAAAAAAAGAA0AAQABAAAAAAAHAA0AAQABAAAAAAAIAA0AAQABAAAAAAAJAA0AAQABAAAAAAAKAA0AAQABAAAAAAALAA0AAQABAAAAAAAMAA0AAQABAAAAAAANAA0AAQABAAAAAAAOAA0AAQABAAAAAAAPAA0AAQABAAAAAAAQAA0AAQABAAAAAAARAA0AAQABAAAAAAASAA0AAQABAAAAAAATAA0AAQABAAAAAAAUAA0AAQABAAAAAAAVAA0AAQABAAAAAAAWAA0AAQABAAAAAAAXAAEAAQACAAAAAAAXAAIAAQACAAEAAAAXAAMAAQACAAEAAAAXAAYAAQACAAEAAAAXAAcAAQACAAAAAAAXAAgAAQACAAEAAAAXAAkAAQACAAEAAAAXAAoAAQACAAAAAAAXAAsAAQACAAEAAAAXAAwAAQACAAEAAAAAAAEAAQAAAAAAAAAAAAIAAQAAAAEAAAAAAAMAAQAAAAEAAAAAAAQAAQAAAAAAAAAAAAYAAQAAAAEAAAAAAAcAAQAAAAAAAAAAAAgAAQAAAAEAAAAAAAkAAQAAAAEAAAAAAAoAAQAAAAAAAAAAAAsAAQAAAAEAAAAAAAwAAQAAAAEAAAABAAEAAQABAAAAAAABAAIAAQABAAEAAAABAAMAAQABAAEAAAABAAQAAQACAAAAAAABAAYAAQABAAEAAAABAAcAAQACAAAAAAABAAgAAQABAAEAAAABAAkAAQABAAEAAAABAAsAAQABAAEAAAABAAwAAQABAAEAAAACAAwAAQABAAEAAAACAAsAAQABAAEAAAACAAkAAQABAAEAAAACAAgAAQABAAEAAAACAAcAAQABAAEAAAACAAYAAQABAAEAAAACAAQAAQABAAEAAAACAAMAAQABAAEAAAACAAIAAQABAAEAAAACAAEAAQABAAAAAAADAAEAAQACAAAAAAADAAIAAQACAAEAAAADAAMAAQACAAEAAAADAAQAAQACAAEAAAADAAUAAQABAAEAAAADAAYAAQABAAEAAAADAAcAAQACAAEAAAADAAgAAQACAAEAAAADAAkAAQACAAEAAAADAAoAAQACAAAAAAADAAsAAQABAAEAAAADAAwAAQABAAEAAAAEAAwAAQABAAEAAAAEAAsAAQABAAEAAAAEAAoAAQAAAAEAAAAEAAkAAQAAAAEAAAAEAAgAAQAAAAEAAAAEAAcAAQAAAAAAAAAEAAYAAQABAAEAAAAEAAUAAQABAAEAAAAEAAQAAQAAAAAAAAAEAAMAAQAAAAEAAAAEAAIAAQAAAAEAAAAEAAEAAQAAAAAAAAAFAAEAAQABAAAAAAAFAAIAAQABAAEAAAAFAAMAAQABAAEAAAAFAAQAAQABAAAAAAAFAAUAAQABAAEAAAAFAAcAAQABAAAAAAAFAAgAAQABAAEAAAAFAAkAAQABAAEAAAAFAAoAAQABAAEAAAAFAAsAAQABAAEAAAAFAAwAAQABAAEAAAAGAAwAAQABAAEAAAAGAAsAAQABAAEAAAAGAAoAAQAAAAAAAAAGAAkAAQABAAEAAAAGAAgAAQABAAEAAAAGAAcAAQABAAAAAAAGAAYAAQABAAEAAAAGAAUAAQABAAEAAAAGAAQAAQABAAAAAAAGAAMAAQABAAEAAAAGAAIAAQABAAEAAAAGAAEAAQABAAAAAAAHAAEAAQABAAAAAAAIAAEAAQABAAAAAAAJAAEAAQABAAAAAAAKAAEAAQABAAAAAAALAAEAAQABAAAAAAAMAAEAAQABAAAAAAANAAEAAQABAAAAAAAOAAEAAQABAAAAAAAPAAEAAQABAAAAAAAQAAEAAQABAAAAAAARAAEAAQABAAAAAAASAAEAAQABAAAAAAATAAEAAQABAAAAAAAUAAEAAQABAAAAAAAVAAEAAQABAAEAAAAWAAEAAQABAAEAAAAWAAIAAQABAAEAAAAWAAMAAQABAAEAAAAWAAQAAQABAAAAAAAWAAUAAQABAAEAAAAWAAYAAQABAAEAAAAWAAcAAQABAAAAAAAWAAgAAQABAAEAAAAWAAkAAQABAAEAAAAWAAoAAQAAAAAAAAAWAAsAAQABAAEAAAAWAAwAAQABAAEAAAAVAAwAAQABAAEAAAAUAAwAAQABAAEAAAATAAwAAQABAAEAAAASAAwAAQABAAEAAAARAAwAAQABAAEAAAAQAAwAAQABAAEAAAAPAAwAAQABAAEAAAAOAAwAAQABAAEAAAANAAwAAQABAAEAAAAMAAwAAQABAAEAAAALAAwAAQABAAEAAAAKAAwAAQABAAEAAAAJAAwAAQAAAAEAAAAIAAwAAQACAAEAAAAHAAwAAQABAAEAAAAHAAsAAQABAAEAAAAHAAoAAQABAAAAAAAHAAkAAQABAAEAAAAHAAgAAQABAAEAAAAHAAcAAQABAAAAAAAHAAYAAQABAAEAAAAHAAUAAQABAAEAAAAHAAQAAQABAAAAAAAHAAMAAQABAAEAAAAHAAIAAQABAAEAAAAIAAIAAQABAAEAAAAIAAMAAQABAAEAAAAIAAQAAQABAAAAAAAIAAUAAQABAAEAAAAIAAYAAQABAAEAAAAIAAcAAQABAAAAAAAIAAgAAQABAAEAAAAIAAkAAQABAAEAAAAIAAoAAQACAAAAAAAIAAsAAQACAAEAAAAJAAsAAQAAAAEAAAAJAAoAAQAAAAAAAAAJAAkAAQABAAEAAAAJAAgAAQABAAEAAAAJAAcAAQABAAAAAAAJAAYAAQABAAEAAAAJAAUAAQABAAEAAAAJAAQAAQABAAAAAAAJAAMAAQABAAEAAAAJAAIAAQABAAEAAAAKAAIAAQABAAEAAAAKAAMAAQABAAEAAAAKAAQAAQABAAAAAAAKAAUAAQABAAEAAAAKAAYAAQABAAEAAAAKAAcAAQABAAAAAAAKAAgAAQABAAEAAAAKAAkAAQABAAEAAAAKAAoAAQACAAAAAAAKAAsAAQABAAEAAAALAAsAAQABAAEAAAALAAoAAQABAAEAAAALAAQAAQABAAAAAAALAAMAAQABAAEAAAALAAIAAQABAAEAAAAMAAIAAQABAAEAAAAMAAMAAQABAAEAAAAMAAQAAQACAAAAAAAMAAUAAQABAAEAAAAMAAYAAQABAAEAAAAMAAcAAQABAAAAAAAMAAgAAQABAAEAAAAMAAkAAQABAAEAAAAMAAoAAQABAAEAAAAMAAsAAQABAAEAAAANAAsAAQABAAEAAAANAAoAAQAAAAAAAAANAAkAAQABAAEAAAANAAgAAQABAAEAAAANAAcAAQABAAAAAAANAAYAAQABAAEAAAANAAUAAQABAAEAAAANAAQAAQABAAEAAAANAAMAAQABAAEAAAANAAIAAQABAAEAAAAOAAIAAQABAAEAAAAPAAIAAQABAAEAAAAQAAIAAQABAAEAAAARAAIAAQABAAEAAAASAAIAAQABAAEAAAATAAIAAQABAAEAAAAUAAIAAQABAAEAAAAVAAIAAQABAAEAAAAVAAMAAQABAAEAAAAVAAQAAQABAAAAAAAVAAUAAQABAAEAAAAVAAYAAQABAAEAAAAVAAcAAQABAAEAAAAVAAgAAQABAAEAAAAVAAkAAQABAAEAAAAVAAoAAQABAAEAAAAVAAsAAQABAAEAAAAUAAsAAQABAAEAAAATAAsAAQABAAEAAAASAAsAAQABAAEAAAARAAsAAQABAAEAAAAQAAsAAQABAAEAAAAPAAsAAQABAAEAAAAOAAsAAQABAAEAAAAOAAoAAQABAAAAAAAOAAkAAQABAAEAAAAOAAgAAQABAAEAAAAOAAUAAQABAAEAAAAOAAQAAQABAAEAAAAOAAMAAQABAAEAAAAOAAYAAQABAAEAAAAOAAcAAQABAAAAAAAPAAUAAQABAAEAAAAPAAQAAQAAAAAAAAAPAAMAAQABAAEAAAAQAAUAAQABAAEAAAAQAAQAAQABAAAAAAAQAAMAAQABAAEAAAARAAUAAQABAAEAAAARAAQAAQABAAAAAAARAAMAAQABAAEAAAASAAUAAQABAAEAAAASAAQAAQABAAAAAAASAAMAAQABAAEAAAATAAQAAQABAAAAAAATAAMAAQABAAEAAAATAAUAAQABAAEAAAAUAAMAAQABAAEAAAAUAAQAAQABAAAAAAAUAAUAAQABAAEAAAAUAAYAAQABAAEAAAAUAAcAAQABAAEAAAAUAAgAAQABAAEAAAAUAAkAAQABAAEAAAAUAAoAAQABAAEAAAATAAYAAQABAAEAAAATAAcAAQABAAAAAAATAAgAAQABAAEAAAATAAkAAQABAAEAAAATAAoAAQACAAAAAAASAAYAAQABAAEAAAASAAcAAQABAAAAAAASAAgAAQABAAEAAAASAAkAAQABAAEAAAASAAoAAQABAAAAAAARAAYAAQABAAEAAAARAAcAAQABAAAAAAARAAgAAQABAAEAAAARAAkAAQABAAEAAAARAAoAAQAAAAAAAAAQAAcAAQABAAAAAAAQAAgAAQABAAEAAAAQAAkAAQABAAEAAAAQAAoAAQABAAEAAAAQAAYAAQABAAEAAAAPAAgAAQABAAEAAAAPAAkAAQABAAEAAAAPAAcAAQABAAAAAAAPAAYAAQABAAEAAAAPAAoAAQACAAAAAAABAAoAAQABAAAAAAACAAoAAQABAAAAAAAFAAYAAQABAAEAAAALAAgAAQABAAEAAAALAAcAAQABAAAAAAALAAYAAQABAAEAAAALAAUAAQABAAEAAAALAAkAAQABAAEAAAACAAUAAQABAAEAAAABAAUAAQABAAEAAAAAAAUAAQAAAAEAAAAXAAQAAQACAAAAAAAXAAUAAQACAAEAAAA=")
 tile_set = SubResource("TileSet_o6xl0")
 
-[node name="Player" parent="." instance=ExtResource("3_nmhu5")]
+[node name="Player" parent="." instance=ExtResource("3_lepkc")]
 position = Vector2(16, 96)
 
-[node name="Exit" parent="." instance=ExtResource("4_paijv")]
+[node name="Exit" parent="." instance=ExtResource("4_pojnb")]
 position = Vector2(176, 12)
 
 [node name="DashUI" type="Control" parent="."]
@@ -93,7 +53,7 @@ offset_left = -192.0
 offset_right = -176.0
 offset_bottom = 8.0
 grow_horizontal = 0
-script = ExtResource("5_ottsx")
+script = ExtResource("5_rt7wb")
 metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
 
@@ -134,105 +94,3 @@ grow_horizontal = 2
 grow_vertical = 2
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="ElectricGateHori2" parent="." instance=ExtResource("8_7fv2j")]
-position = Vector2(168, 60)
-
-[node name="ElectricGateVert2" parent="." instance=ExtResource("7_gqlbh")]
-position = Vector2(64, 44)
-
-[node name="ElectricGateVert3" parent="." instance=ExtResource("7_gqlbh")]
-position = Vector2(72, 44)
-
-[node name="ElectricGateVert4" parent="." instance=ExtResource("7_gqlbh")]
-position = Vector2(80, 44)
-
-[node name="ElectricGateVert5" parent="." instance=ExtResource("7_gqlbh")]
-position = Vector2(64, 68)
-
-[node name="ElectricGateVert6" parent="." instance=ExtResource("7_gqlbh")]
-position = Vector2(72, 68)
-
-[node name="ElectricGateVert7" parent="." instance=ExtResource("7_gqlbh")]
-position = Vector2(80, 68)
-
-[node name="FuelCell" parent="." instance=ExtResource("9_r75pg")]
-position = Vector2(64, 96)
-
-[node name="FuelCell2" parent="." instance=ExtResource("9_r75pg")]
-position = Vector2(132, 72)
-
-[node name="FuelCell3" parent="." instance=ExtResource("9_r75pg")]
-position = Vector2(40, 24)
-
-[node name="FuelCell4" parent="." instance=ExtResource("9_r75pg")]
-position = Vector2(132, 96)
-
-[node name="FuelCell5" parent="." instance=ExtResource("9_r75pg")]
-position = Vector2(8, 48)
-
-[node name="Path2D" type="Path2D" parent="."]
-position = Vector2(12, 72)
-curve = SubResource("Curve2D_xte1k")
-
-[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-position = Vector2(12, 0)
-rotates = false
-
-[node name="Drone" parent="Path2D/PathFollow2D" instance=ExtResource("6_8f2ro")]
-
-[node name="Path2D3" type="Path2D" parent="."]
-curve = SubResource("Curve2D_8idsu")
-
-[node name="PathFollow2D" type="PathFollow2D" parent="Path2D3"]
-position = Vector2(24, 24)
-rotation = 1.5708
-rotates = false
-
-[node name="Drone" parent="Path2D3/PathFollow2D" instance=ExtResource("6_8f2ro")]
-rotation = -1.5708
-
-[node name="Path2D2" type="Path2D" parent="."]
-position = Vector2(96, 84)
-curve = SubResource("Curve2D_22m3q")
-
-[node name="PathFollow2D" type="PathFollow2D" parent="Path2D2"]
-rotates = false
-loop = false
-
-[node name="Drone" parent="Path2D2/PathFollow2D" instance=ExtResource("6_8f2ro")]
-loop_path = true
-
-[node name="Path2D4" type="Path2D" parent="."]
-position = Vector2(168, 96)
-curve = SubResource("Curve2D_oqick")
-
-[node name="PathFollow2D" type="PathFollow2D" parent="Path2D4"]
-position = Vector2(0, -12)
-rotation = -1.5708
-rotates = false
-loop = false
-
-[node name="Drone" parent="Path2D4/PathFollow2D" instance=ExtResource("6_8f2ro")]
-rotation = 1.5708
-loop_path = true
-
-[node name="Path2D5" type="Path2D" parent="."]
-position = Vector2(40, 20)
-curve = SubResource("Curve2D_nmhu5")
-
-[node name="PathFollow2D" type="PathFollow2D" parent="Path2D5"]
-rotates = false
-
-[node name="Drone" parent="Path2D5/PathFollow2D" instance=ExtResource("6_8f2ro")]
-
-[node name="Path2D6" type="Path2D" parent="."]
-position = Vector2(184, 28)
-curve = SubResource("Curve2D_paijv")
-
-[node name="PathFollow2D" type="PathFollow2D" parent="Path2D6"]
-rotation = 3.14159
-rotates = false
-
-[node name="Drone" parent="Path2D6/PathFollow2D" instance=ExtResource("6_8f2ro")]
-rotation = -3.14159
