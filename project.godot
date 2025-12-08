@@ -89,8 +89,8 @@ project/editorState=[{
 "path": "res://scripts/dash_ui.gd",
 "type": "file"
 }, {
-"column": 0,
-"line": 21,
+"column": 22,
+"line": 2,
 "path": "res://scripts/drone.gd",
 "type": "file"
 }, {
@@ -115,7 +115,6 @@ project/editorState=[{
 "type": "file"
 }, {
 "column": 0,
-"current": true,
 "line": 2,
 "path": "res://scripts/game_state.gd",
 "type": "file"
@@ -125,13 +124,14 @@ project/editorState=[{
 "path": "res://scripts/player.gd",
 "type": "file"
 }, {
-"column": 0,
-"line": 0,
+"column": 32,
+"line": 2,
 "path": "res://scripts/laser_beam_cont.gd",
 "type": "file"
 }, {
-"column": 0,
-"line": 23,
+"column": 31,
+"current": true,
+"line": 2,
 "path": "res://scripts/laser_beam_sweep.gd",
 "type": "file"
 }]

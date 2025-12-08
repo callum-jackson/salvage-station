@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var rotation_speed = 90.0
+@export var rotation_speed = 60.0
 @export var sweep_angle = 180.0
 
 var raycast: RayCast2D
