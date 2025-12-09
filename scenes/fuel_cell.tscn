@@ -43,6 +43,7 @@ animations = [{
 size = Vector2(4, 6)
 
 [node name="FuelCell" type="Area2D" groups=["fuel_cells"]]
+collision_layer = 2
 script = ExtResource("1_crm1s")
 metadata/_edit_group_ = true
 

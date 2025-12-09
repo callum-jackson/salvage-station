@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Salvage Station"
-run/main_scene="res://scenes/level_05.tscn"
+run/main_scene="res://scenes/level_01.tscn"
 config/features=PackedStringArray("4.4", "Mobile")
 boot_splash/bg_color=Color(0.141174, 0.139999, 0.139999, 1)
 config/icon="res://icon.svg"
@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 game_state="*res://scripts/game_state.gd"
+game_manager="*res://scripts/game_manager.gd"
 
 [display]
 
@@ -80,7 +81,7 @@ project/breakpoints={
 }
 project/editorState=[{
 "column": 0,
-"line": 6,
+"line": 0,
 "path": "res://scripts/dash_thrusters.gd",
 "type": "file"
 }, {
@@ -90,27 +91,28 @@ project/editorState=[{
 "type": "file"
 }, {
 "column": 0,
-"line": 2,
+"line": 26,
 "path": "res://scripts/drone.gd",
 "type": "file"
 }, {
 "column": 0,
-"line": 22,
+"line": 32,
 "path": "res://scripts/electric_gate.gd",
 "type": "file"
 }, {
 "column": 0,
-"line": 0,
+"line": 12,
 "path": "res://scripts/exit.gd",
 "type": "file"
 }, {
 "column": 0,
-"line": 0,
+"line": 7,
 "path": "res://scripts/fuel_cell.gd",
 "type": "file"
 }, {
 "column": 0,
-"line": 0,
+"current": true,
+"line": 28,
 "path": "res://scripts/game_manager.gd",
 "type": "file"
 }, {
@@ -125,13 +127,17 @@ project/editorState=[{
 "type": "file"
 }, {
 "column": 0,
-"line": 2,
+"line": 58,
 "path": "res://scripts/laser_beam_cont.gd",
 "type": "file"
 }, {
 "column": 0,
-"current": true,
-"line": 2,
+"line": 44,
 "path": "res://scripts/laser_beam_sweep.gd",
+"type": "file"
+}, {
+"column": 34,
+"line": 3,
+"path": "res://scripts/death_overlay.gd",
 "type": "file"
 }]
