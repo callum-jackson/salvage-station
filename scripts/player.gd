@@ -6,13 +6,21 @@ extends CharacterBody2D
 
 var screen_size
 var current_speed
-var is_dashing = false
-var dash_timer = 0.0
-var cooldown_timer = 0.0
+var is_dashing
+var dash_timer
+var cooldown_timer
 
 func _ready() -> void:
 	screen_size = get_viewport_rect().size
 	motion_mode = CharacterBody2D.MOTION_MODE_FLOATING
+	is_dashing = false
+	dash_timer = 0.0
+	cooldown_timer = 0.0
+	
+	var current_scene = get_tree().current_scene.name
+	if current_scene == "Level02":
+		game_state.has_thrusters = false
+		game_state.dash_available = true
 
 func _physics_process(delta: float) -> void:
 	if cooldown_timer > 0:

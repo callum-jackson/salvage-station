@@ -96,7 +96,7 @@ project/editorState=[{
 "type": "file"
 }, {
 "column": 0,
-"line": 32,
+"line": 0,
 "path": "res://scripts/electric_gate.gd",
 "type": "file"
 }, {
@@ -111,18 +111,18 @@ project/editorState=[{
 "type": "file"
 }, {
 "column": 0,
-"current": true,
-"line": 28,
+"line": 5,
 "path": "res://scripts/game_manager.gd",
 "type": "file"
 }, {
 "column": 0,
-"line": 2,
+"line": 0,
 "path": "res://scripts/game_state.gd",
 "type": "file"
 }, {
-"column": 0,
-"line": 0,
+"column": 18,
+"current": true,
+"line": 10,
 "path": "res://scripts/player.gd",
 "type": "file"
 }, {
@@ -136,8 +136,8 @@ project/editorState=[{
 "path": "res://scripts/laser_beam_sweep.gd",
 "type": "file"
 }, {
-"column": 34,
-"line": 3,
+"column": 0,
+"line": 5,
 "path": "res://scripts/death_overlay.gd",
 "type": "file"
 }]
