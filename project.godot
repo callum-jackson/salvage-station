@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Salvage Station"
-run/main_scene="res://scenes/level_01.tscn"
+run/main_scene="res://scenes/level_05.tscn"
 config/features=PackedStringArray("4.4", "Mobile")
 boot_splash/bg_color=Color(0.141174, 0.139999, 0.139999, 1)
 config/icon="res://icon.svg"
@@ -60,6 +60,11 @@ dash={
 "events": Array[InputEvent]([Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":32,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
 ])
 }
+confirm={
+"deadzone": 0.5,
+"events": Array[InputEvent]([Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194309,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+])
+}
 
 [physics]
 
@@ -86,17 +91,17 @@ project/editorState=[{
 "type": "file"
 }, {
 "column": 0,
-"line": 16,
+"line": 0,
 "path": "res://scripts/dash_ui.gd",
 "type": "file"
 }, {
 "column": 0,
-"line": 26,
+"line": 0,
 "path": "res://scripts/drone.gd",
 "type": "file"
 }, {
-"column": 0,
-"line": 0,
+"column": 31,
+"line": 31,
 "path": "res://scripts/electric_gate.gd",
 "type": "file"
 }, {
@@ -105,13 +110,13 @@ project/editorState=[{
 "path": "res://scripts/exit.gd",
 "type": "file"
 }, {
-"column": 0,
-"line": 7,
+"column": 14,
+"line": 11,
 "path": "res://scripts/fuel_cell.gd",
 "type": "file"
 }, {
 "column": 0,
-"line": 5,
+"line": 0,
 "path": "res://scripts/game_manager.gd",
 "type": "file"
 }, {
@@ -120,9 +125,8 @@ project/editorState=[{
 "path": "res://scripts/game_state.gd",
 "type": "file"
 }, {
-"column": 18,
-"current": true,
-"line": 10,
+"column": 0,
+"line": 0,
 "path": "res://scripts/player.gd",
 "type": "file"
 }, {
@@ -136,8 +140,9 @@ project/editorState=[{
 "path": "res://scripts/laser_beam_sweep.gd",
 "type": "file"
 }, {
-"column": 0,
-"line": 5,
+"column": 43,
+"current": true,
+"line": 3,
 "path": "res://scripts/death_overlay.gd",
 "type": "file"
 }]

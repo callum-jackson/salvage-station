@@ -16,11 +16,11 @@ func _ready() -> void:
 	is_dashing = false
 	dash_timer = 0.0
 	cooldown_timer = 0.0
+	game_state.dash_available = true
 	
 	var current_scene = get_tree().current_scene.name
 	if current_scene == "Level02":
 		game_state.has_thrusters = false
-		game_state.dash_available = true
 
 func _physics_process(delta: float) -> void:
 	if cooldown_timer > 0:

@@ -25,8 +25,8 @@ func next_level() -> void:
 
 func died() -> void:
 	var current_scene_root = get_tree().root.get_child(get_tree().root.get_child_count() - 1)
-	if current_scene_root.has_node("DeathOverlay"):
-		current_scene_root.get_node("DeathOverlay").show_overlay()
+	current_scene_root.get_node("Player").queue_free()
+	current_scene_root.get_node("DeathOverlay").show_overlay()
 
 func _on_fuel_cell_hit() -> void:
 	fuel_cells_remaining -= 1
