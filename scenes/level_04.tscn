@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bi3rgqflmea03" path="res://assets/sprites/tilesheet.png" id="2_oqick"]
 [ext_resource type="PackedScene" uid="uid://11fa8suln26r" path="res://scenes/player.tscn" id="3_nmhu5"]
 [ext_resource type="PackedScene" uid="uid://blq3b56x3c6mm" path="res://scenes/exit.tscn" id="4_paijv"]
-[ext_resource type="Script" uid="uid://yw6ljk7oayyd" path="res://scripts/dash_ui.gd" id="5_ottsx"]
+[ext_resource type="Script" uid="uid://yw6ljk7oayyd" path="res://scripts/level_ui.gd" id="5_ottsx"]
 [ext_resource type="PackedScene" uid="uid://dt7h57s6bdsm7" path="res://scenes/drone.tscn" id="6_8f2ro"]
 [ext_resource type="PackedScene" uid="uid://digk85obobp3t" path="res://scenes/electric_gate_vert.tscn" id="7_gqlbh"]
 [ext_resource type="PackedScene" uid="uid://cx3vojl7qj07d" path="res://scenes/electric_gate_hori.tscn" id="8_7fv2j"]

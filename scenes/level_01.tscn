@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://blq3b56x3c6mm" path="res://scenes/exit.tscn" id="5_0tv6x"]
 [ext_resource type="PackedScene" uid="uid://cyx7no4d5jhbv" path="res://scenes/fuel_cell.tscn" id="6_qgxqk"]
 [ext_resource type="PackedScene" uid="uid://dxwcos2w71qxa" path="res://scenes/entry.tscn" id="7_t0ybu"]
-[ext_resource type="Script" uid="uid://yw6ljk7oayyd" path="res://scripts/dash_ui.gd" id="9_n3syt"]
+[ext_resource type="Script" uid="uid://yw6ljk7oayyd" path="res://scripts/level_ui.gd" id="9_n3syt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tefeu"]
 texture = ExtResource("2_2ucnx")

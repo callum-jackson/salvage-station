@@ -7,8 +7,25 @@ func _ready() -> void:
 	fuel_cells_remaining = fuel_cells.size()
 	for fuel_cell in fuel_cells:
 		fuel_cell.hit.connect(_on_fuel_cell_hit)
+	
+	start_timer()
+
+func _process(delta: float) -> void:
+	if game_state.timer_running:
+		game_state.level_elapsed_time += delta
+
+func start_timer() -> void:
+	game_state.level_start_time = Time.get_ticks_msec() / 1000.0
+	game_state.level_elapsed_time = 0.0
+	game_state.timer_running = true
+
+func stop_timer() -> void:
+	game_state.timer_running = false
+	game_state.level_complete_time = game_state.level_elapsed_time
 
 func next_level() -> void:
+	stop_timer()
+	
 	var current_scene_root = get_tree().root.get_child(get_tree().root.get_child_count() - 1)
 	var current_scene_name = current_scene_root.name
 	
@@ -24,6 +41,8 @@ func next_level() -> void:
 		get_tree().quit()
 
 func died() -> void:
+	stop_timer()
+	
 	var current_scene_root = get_tree().root.get_child(get_tree().root.get_child_count() - 1)
 	current_scene_root.get_node("Player").queue_free()
 	current_scene_root.get_node("DeathOverlay").show_overlay()

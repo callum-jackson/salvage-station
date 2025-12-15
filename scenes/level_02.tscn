@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://11fa8suln26r" path="res://scenes/player.tscn" id="3_b6l7m"]
 [ext_resource type="PackedScene" uid="uid://digk85obobp3t" path="res://scenes/electric_gate_vert.tscn" id="3_u2tna"]
 [ext_resource type="PackedScene" uid="uid://blq3b56x3c6mm" path="res://scenes/exit.tscn" id="4_u2tna"]
-[ext_resource type="Script" uid="uid://yw6ljk7oayyd" path="res://scripts/dash_ui.gd" id="5_jm0yl"]
+[ext_resource type="Script" uid="uid://yw6ljk7oayyd" path="res://scripts/level_ui.gd" id="5_jm0yl"]
 [ext_resource type="PackedScene" uid="uid://cx3vojl7qj07d" path="res://scenes/electric_gate_hori.tscn" id="6_n5em7"]
 [ext_resource type="PackedScene" uid="uid://cyx7no4d5jhbv" path="res://scenes/fuel_cell.tscn" id="7_64aqs"]
 [ext_resource type="PackedScene" uid="uid://bclehqt5uo0li" path="res://scenes/dash_thrusters.tscn" id="9_u2tna"]

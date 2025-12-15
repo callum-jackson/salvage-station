@@ -1,0 +1,59 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5e3u4tpcniot"]
+
+[ext_resource type="Script" uid="uid://yw6ljk7oayyd" path="res://scripts/level_ui.gd" id="1_exbfu"]
+
+[node name="LevelUI" type="CanvasLayer"]
+layer = 100
+script = ExtResource("1_exbfu")
+
+[node name="TimerContainer" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 72.0
+offset_right = 120.0
+offset_bottom = 8.0
+
+[node name="Panel" type="Panel" parent="TimerContainer"]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 48.0
+offset_bottom = 7.0
+
+[node name="TimerLabel" type="Label" parent="TimerContainer"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -24.0
+offset_right = 24.0
+offset_bottom = 8.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 6
+text = "00:00.00"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DashContainer" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 2.0
+offset_right = 36.0
+offset_bottom = 8.0
+
+[node name="DashLabel" type="Label" parent="DashContainer"]
+layout_mode = 0
+offset_top = 0.5
+offset_right = 18.0
+offset_bottom = 7.5
+theme_override_font_sizes/font_size = 5
+text = "Dash:"
+vertical_alignment = 1
+
+[node name="CooldownBar" type="ProgressBar" parent="DashContainer"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 1.0
+offset_right = 36.0
+offset_bottom = 7.0
+value = 100.0
+show_percentage = false

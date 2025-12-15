@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://cyx7no4d5jhbv" path="res://scenes/fuel_cell.tscn" id="6_qs1vn"]
 [ext_resource type="PackedScene" uid="uid://digk85obobp3t" path="res://scenes/electric_gate_vert.tscn" id="7_13hs1"]
 [ext_resource type="PackedScene" uid="uid://cx3vojl7qj07d" path="res://scenes/electric_gate_hori.tscn" id="8_fptmo"]
-[ext_resource type="Script" uid="uid://yw6ljk7oayyd" path="res://scripts/dash_ui.gd" id="9_bakr3"]
+[ext_resource type="Script" uid="uid://yw6ljk7oayyd" path="res://scripts/level_ui.gd" id="9_bakr3"]
 [ext_resource type="PackedScene" uid="uid://dt7h57s6bdsm7" path="res://scenes/drone.tscn" id="10_4asn1"]
 [ext_resource type="PackedScene" uid="uid://lpf27a3lu7d3" path="res://scenes/laser_beam_cont.tscn" id="11_dw7u0"]
 [ext_resource type="PackedScene" uid="uid://cxhndtm6wyama" path="res://scenes/laser_beam_sweep.tscn" id="12_fyxdr"]

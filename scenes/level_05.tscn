@@ -1,11 +1,11 @@
 [gd_scene load_steps=20 format=4 uid="uid://c11wabdlsdk57"]
 
 [ext_resource type="Script" uid="uid://rxrxf1ejh4i0" path="res://scripts/game_manager.gd" id="1_g5e2b"]
+[ext_resource type="PackedScene" uid="uid://c5e3u4tpcniot" path="res://scenes/level_ui.tscn" id="2_d8cpw"]
 [ext_resource type="Texture2D" uid="uid://bi3rgqflmea03" path="res://assets/sprites/tilesheet.png" id="2_m5tnv"]
 [ext_resource type="PackedScene" uid="uid://bpj6dxggigwmt" path="res://scenes/death_overlay.tscn" id="2_rt7wb"]
 [ext_resource type="PackedScene" uid="uid://11fa8suln26r" path="res://scenes/player.tscn" id="3_lepkc"]
 [ext_resource type="PackedScene" uid="uid://blq3b56x3c6mm" path="res://scenes/exit.tscn" id="4_pojnb"]
-[ext_resource type="Script" uid="uid://yw6ljk7oayyd" path="res://scripts/dash_ui.gd" id="5_rt7wb"]
 [ext_resource type="PackedScene" uid="uid://dt7h57s6bdsm7" path="res://scenes/drone.tscn" id="6_6ksa5"]
 [ext_resource type="PackedScene" uid="uid://cx3vojl7qj07d" path="res://scenes/electric_gate_hori.tscn" id="7_g5e2b"]
 [ext_resource type="PackedScene" uid="uid://cxhndtm6wyama" path="res://scenes/laser_beam_sweep.tscn" id="7_ha83q"]
@@ -67,6 +67,8 @@ point_count = 5
 [node name="Level05" type="Node"]
 script = ExtResource("1_g5e2b")
 
+[node name="LevelUI" parent="." instance=ExtResource("2_d8cpw")]
+
 [node name="DeathOverlay" parent="." instance=ExtResource("2_rt7wb")]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
@@ -78,57 +80,6 @@ position = Vector2(16, 96)
 
 [node name="Exit" parent="." instance=ExtResource("4_pojnb")]
 position = Vector2(176, 12)
-
-[node name="DashUI" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -192.0
-offset_right = -176.0
-offset_bottom = 8.0
-grow_horizontal = 0
-script = ExtResource("5_rt7wb")
-metadata/_edit_group_ = true
-metadata/_edit_lock_ = true
-
-[node name="Panel" type="Panel" parent="DashUI"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="CooldownBar" type="ProgressBar" parent="DashUI"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 2.0
-offset_top = 2.0
-offset_right = -2.0
-offset_bottom = -2.0
-grow_horizontal = 2
-grow_vertical = 2
-value = 100.0
-show_percentage = false
-
-[node name="DashIcon" type="Label" parent="DashUI"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -8.0
-offset_top = -8.0
-offset_right = 8.0
-offset_bottom = 8.0
-grow_horizontal = 2
-grow_vertical = 2
-horizontal_alignment = 1
-vertical_alignment = 1
 
 [node name="Path2D2" type="Path2D" parent="."]
 position = Vector2(100, 92)
