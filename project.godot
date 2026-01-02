@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Salvage Station"
-run/main_scene="res://scenes/level_05.tscn"
+run/main_scene="res://scenes/start.tscn"
 config/features=PackedStringArray("4.4", "Mobile")
 boot_splash/bg_color=Color(0.141174, 0.139999, 0.139999, 1)
 config/icon="res://icon.svg"
@@ -81,8 +81,9 @@ renderer/rendering_method="mobile"
 
 project/breakpoints={
 "res://scripts/drone.gd": PackedInt32Array(),
+"res://scripts/game_manager.gd": PackedInt32Array(),
 "res://scripts/laser_beam.gd": PackedInt32Array(),
-"res://scripts/player.gd": PackedInt32Array(0)
+"res://scripts/player.gd": PackedInt32Array()
 }
 project/editorState=[{
 "column": 0,
@@ -96,12 +97,12 @@ project/editorState=[{
 "type": "file"
 }, {
 "column": 0,
-"line": 31,
+"line": 32,
 "path": "res://scripts/electric_gate.gd",
 "type": "file"
 }, {
 "column": 0,
-"line": 12,
+"line": 0,
 "path": "res://scripts/exit.gd",
 "type": "file"
 }, {
@@ -112,17 +113,17 @@ project/editorState=[{
 }, {
 "column": 0,
 "current": true,
-"line": 57,
+"line": 50,
 "path": "res://scripts/game_manager.gd",
 "type": "file"
 }, {
 "column": 0,
-"line": 0,
+"line": 2,
 "path": "res://scripts/game_state.gd",
 "type": "file"
 }, {
 "column": 0,
-"line": 0,
+"line": 21,
 "path": "res://scripts/player.gd",
 "type": "file"
 }, {
@@ -132,17 +133,37 @@ project/editorState=[{
 "type": "file"
 }, {
 "column": 0,
-"line": 44,
+"line": 33,
 "path": "res://scripts/laser_beam_sweep.gd",
 "type": "file"
 }, {
 "column": 0,
-"line": 0,
+"line": 15,
 "path": "res://scripts/death_overlay.gd",
 "type": "file"
 }, {
 "column": 0,
-"line": 22,
+"line": 38,
 "path": "res://scripts/level_ui.gd",
+"type": "file"
+}, {
+"column": 0,
+"line": 0,
+"path": "res://scripts/level.gd",
+"type": "file"
+}, {
+"column": 0,
+"line": 0,
+"path": "res://scripts/level_complete_overlay.gd",
+"type": "file"
+}, {
+"column": 0,
+"line": 0,
+"path": "res://scripts/game_complete_overlay.gd",
+"type": "file"
+}, {
+"column": 0,
+"line": 4,
+"path": "res://scripts/start.gd",
 "type": "file"
 }]

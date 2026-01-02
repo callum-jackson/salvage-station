@@ -10,4 +10,5 @@ func open_door() -> void:
 	$Area2D/CollisionShape2D.set_deferred("disabled", false)
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	game_manager.next_level()
+	if body.is_in_group("player"):
+		game_manager.level_complete()

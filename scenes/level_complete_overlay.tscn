@@ -1,11 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://bpj6dxggigwmt"]
+[gd_scene load_steps=2 format=3 uid="uid://baajaa4b6wbnc"]
 
-[ext_resource type="Script" uid="uid://b6q07r7f2gwl7" path="res://scripts/death_overlay.gd" id="1_aaayt"]
+[ext_resource type="Script" uid="uid://bmu2q522s4i40" path="res://scripts/level_complete_overlay.gd" id="1_5eq7g"]
 
-[node name="DeathOverlay" type="CanvasLayer"]
+[node name="LevelCompleteOverlay" type="CanvasLayer"]
 layer = 100
 visible = false
-script = ExtResource("1_aaayt")
+script = ExtResource("1_5eq7g")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 modulate = Color(1, 1, 1, 0.6)
@@ -28,7 +28,7 @@ theme_override_colors/font_color = Color(0.921555, 0.921555, 0.921555, 1)
 theme_override_font_sizes/font_size = 20
 text = "00:00:00"
 
-[node name="RetryLabel" type="Label" parent="."]
+[node name="NextLabel" type="Label" parent="."]
 anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
@@ -39,5 +39,5 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 10
-text = "Press Enter to try again"
+text = "Press Enter to move to the next room"
 horizontal_alignment = 1
