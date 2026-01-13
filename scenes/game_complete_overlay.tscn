@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://tfp1sbhrsgwc"]
+[gd_scene load_steps=3 format=3 uid="uid://tfp1sbhrsgwc"]
 
 [ext_resource type="Script" uid="uid://cextg06waoc8e" path="res://scripts/game_complete_overlay.gd" id="1_c3wvw"]
+[ext_resource type="FontFile" uid="uid://dem58m3avjn42" path="res://assets/fonts/ShareTechMono-Regular.ttf" id="2_6ulap"]
 
 [node name="GameCompleteOverlay" type="CanvasLayer"]
 layer = 100
@@ -20,12 +21,14 @@ color = Color(0.505875, 0.592148, 0.588226, 1)
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -43.5
-offset_right = 43.5
-offset_bottom = 57.0
+offset_left = -52.0
+offset_top = 12.0
+offset_right = 52.0
+offset_bottom = 40.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.921555, 0.921555, 0.921555, 1)
-theme_override_font_sizes/font_size = 20
+theme_override_fonts/font = ExtResource("2_6ulap")
+theme_override_font_sizes/font_size = 24
 text = "00:00:00"
 
 [node name="NextLabel" type="Label" parent="."]
@@ -33,12 +36,16 @@ anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_top = -14.5
-offset_bottom = 14.5
+offset_left = 8.0
+offset_right = -8.0
+offset_bottom = 44.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_6ulap")
 theme_override_font_sizes/font_size = 8
 text = "Well done. You collected all of the fuel cells.
+
 Press Enter to play again"
 horizontal_alignment = 1
+autowrap_mode = 2

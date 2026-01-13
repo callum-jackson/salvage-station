@@ -1,6 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://cao2s3ybmgl2j"]
+[gd_scene load_steps=6 format=3 uid="uid://cao2s3ybmgl2j"]
 
 [ext_resource type="Script" uid="uid://bjd3iigc0bi7b" path="res://scripts/start.gd" id="1_jaeev"]
+[ext_resource type="Texture2D" uid="uid://dgqmr5fvwfoil" path="res://assets/sprites/logo_animated_01.png" id="2_bodal"]
+[ext_resource type="Texture2D" uid="uid://c8oom8j78qfe6" path="res://assets/sprites/logo_animated_02.png" id="3_kdmts"]
+[ext_resource type="FontFile" uid="uid://dem58m3avjn42" path="res://assets/fonts/ShareTechMono-Regular.ttf" id="4_kdmts"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0auqf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_bodal")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_kdmts")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
 
 [node name="Start" type="CanvasLayer"]
 layer = 100
@@ -14,28 +31,26 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.505875, 0.592148, 0.588226, 1)
 
-[node name="Logo" type="Label" parent="."]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -43.5
-offset_right = 43.5
-offset_bottom = 57.0
-grow_horizontal = 2
-theme_override_colors/font_color = Color(0.921555, 0.921555, 0.921555, 1)
-theme_override_font_sizes/font_size = 20
-text = "Salvage Station"
+[node name="Logo" type="AnimatedSprite2D" parent="."]
+position = Vector2(96, 24)
+scale = Vector2(0.05, 0.05)
+sprite_frames = SubResource("SpriteFrames_0auqf")
+autoplay = "default"
+frame_progress = 0.269034
 
 [node name="InfoLabel" type="Label" parent="."]
 anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_top = -14.5
-offset_bottom = 14.5
+offset_left = 4.0
+offset_top = -8.0
+offset_right = -4.0
+offset_bottom = 15.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_kdmts")
 theme_override_font_sizes/font_size = 8
 text = "Collect all of the fuel cells on each level then get back to your ship"
 horizontal_alignment = 1
@@ -46,10 +61,11 @@ anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -29.0
+offset_top = -24.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_kdmts")
 theme_override_font_sizes/font_size = 10
 text = "Press Enter to begin"
 horizontal_alignment = 1

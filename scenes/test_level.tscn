@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://7ij1xoq46k7n"]
+[gd_scene load_steps=16 format=4 uid="uid://rxs1jyvuu7q0"]
 
 [ext_resource type="Script" uid="uid://rxrxf1ejh4i0" path="res://scripts/game_manager.gd" id="1_7gix3"]
 [ext_resource type="Texture2D" uid="uid://bi3rgqflmea03" path="res://assets/sprites/tilesheet.png" id="2_4asn1"]

@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://c5e3u4tpcniot"]
+[gd_scene load_steps=3 format=3 uid="uid://c5e3u4tpcniot"]
 
 [ext_resource type="Script" uid="uid://yw6ljk7oayyd" path="res://scripts/level_ui.gd" id="1_exbfu"]
+[ext_resource type="FontFile" uid="uid://dem58m3avjn42" path="res://assets/fonts/ShareTechMono-Regular.ttf" id="2_qvfhj"]
 
 [node name="LevelUI" type="CanvasLayer"]
 layer = 100
@@ -25,9 +26,11 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -24.0
+offset_top = 1.0
 offset_right = 24.0
-offset_bottom = 8.0
+offset_bottom = 9.0
 grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_qvfhj")
 theme_override_font_sizes/font_size = 6
 text = "00:00.00"
 horizontal_alignment = 1
@@ -45,6 +48,7 @@ layout_mode = 0
 offset_top = 0.5
 offset_right = 18.0
 offset_bottom = 7.5
+theme_override_fonts/font = ExtResource("2_qvfhj")
 theme_override_font_sizes/font_size = 5
 text = "Dash:"
 vertical_alignment = 1
