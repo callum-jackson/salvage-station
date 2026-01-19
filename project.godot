@@ -86,8 +86,9 @@ project/breakpoints={
 "res://scripts/player.gd": PackedInt32Array()
 }
 project/editorState=[{
-"column": 0,
-"line": 0,
+"column": 21,
+"current": true,
+"line": 10,
 "path": "res://scripts/dash_thrusters.gd",
 "type": "file"
 }, {
@@ -106,7 +107,7 @@ project/editorState=[{
 "path": "res://scripts/exit.gd",
 "type": "file"
 }, {
-"column": 0,
+"column": 2,
 "line": 10,
 "path": "res://scripts/fuel_cell.gd",
 "type": "file"
@@ -121,8 +122,7 @@ project/editorState=[{
 "path": "res://scripts/game_state.gd",
 "type": "file"
 }, {
-"column": 35,
-"current": true,
+"column": 0,
 "line": 46,
 "path": "res://scripts/player.gd",
 "type": "file"

@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://bclehqt5uo0li"]
+[gd_scene load_steps=10 format=3 uid="uid://bclehqt5uo0li"]
 
 [ext_resource type="Script" uid="uid://c1ghwx0gho6re" path="res://scripts/dash_thrusters.gd" id="1_gwepl"]
 [ext_resource type="Texture2D" uid="uid://bw6xn1ytrgtpq" path="res://assets/sprites/dash_thrusters_sheet.png" id="2_gwepl"]
+[ext_resource type="AudioStream" uid="uid://psf8u4xwbhe" path="res://assets/sounds/thrusters_pickup.wav" id="3_yh55t"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gwepl"]
 atlas = ExtResource("2_gwepl")
@@ -56,5 +57,9 @@ frame_progress = 0.649694
 position = Vector2(-2.38419e-07, 0)
 rotation = 1.5712
 shape = SubResource("RectangleShape2D_gwepl")
+
+[node name="PickupSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_yh55t")
+volume_db = 0.005
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
