@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://cyx7no4d5jhbv"]
+[gd_scene load_steps=10 format=3 uid="uid://cyx7no4d5jhbv"]
 
 [ext_resource type="Script" uid="uid://byhra8pem5n56" path="res://scripts/fuel_cell.gd" id="1_crm1s"]
 [ext_resource type="Texture2D" uid="uid://c07rxkunts7kn" path="res://assets/sprites/fuel_cell_sheet.png" id="2_crm1s"]
+[ext_resource type="AudioStream" uid="uid://bhe7o0x4jqbwf" path="res://assets/sounds/fuel_cell_pickup.wav" id="3_ob7pv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_crm1s"]
 atlas = ExtResource("2_crm1s")
@@ -55,5 +56,9 @@ frame_progress = 0.314537
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_75h8v")
+
+[node name="PickupSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_ob7pv")
+volume_db = 0.005
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

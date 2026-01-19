@@ -6,6 +6,7 @@ func _ready() -> void:
 
 func open_door() -> void:
 	$AnimatedSprite2D.play("open")
+	$DoorOpenSound.play()
 	$StaticBody2D/CollisionShape2D.set_deferred("disabled", true)
 	$Area2D/CollisionShape2D.set_deferred("disabled", false)
 

@@ -46,6 +46,7 @@ func _physics_process(delta: float) -> void:
 	
 	if Input.is_action_just_pressed("dash"):
 		if game_state.has_thrusters and game_state.dash_available and velocity.length() > 0:
+			$ThrusterSound.play()
 			is_dashing = true
 			dash_timer = dash_duration
 			game_state.dash_available = false

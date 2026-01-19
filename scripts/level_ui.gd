@@ -34,6 +34,9 @@ func update_dash_ui() -> void:
 		cooldown_bar.modulate = Color(1, 1, 1, 1)
 	else:
 		var player = get_tree().get_first_node_in_group("player")
-		var cooldown_progress = 1.0 - (player.cooldown_timer / game_state.dash_cooldown_time)
-		cooldown_bar.value = cooldown_progress * 100
-		cooldown_bar.modulate = Color(0.5, 0.5, 0.5, 1)
+		if player == null or player.cooldown_timer == null:
+			return
+		else:
+			var cooldown_progress = 1.0 - (player.cooldown_timer / game_state.dash_cooldown_time)
+			cooldown_bar.value = cooldown_progress * 100
+			cooldown_bar.modulate = Color(0.5, 0.5, 0.5, 1)
