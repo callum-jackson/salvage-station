@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://cx3vojl7qj07d"]
+[gd_scene load_steps=10 format=3 uid="uid://cx3vojl7qj07d"]
 
 [ext_resource type="Texture2D" uid="uid://bhhjl2witsv20" path="res://assets/sprites/electric_gate_hori_sheet.png" id="1_6567s"]
 [ext_resource type="Script" uid="uid://dohcr3y6vc7ep" path="res://scripts/electric_gate.gd" id="1_ktjl8"]
+[ext_resource type="AudioStream" uid="uid://r27q41gg3qvm" path="res://assets/sounds/electricity_gate.wav" id="3_2oqj1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ktjl8"]
 atlas = ExtResource("1_6567s")
@@ -57,5 +58,9 @@ autoplay = "active"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_6567s")
+
+[node name="ElectricitySound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_2oqj1")
+volume_db = -30.0
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

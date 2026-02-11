@@ -1,7 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://dt7h57s6bdsm7"]
+[gd_scene load_steps=9 format=3 uid="uid://dt7h57s6bdsm7"]
 
 [ext_resource type="Texture2D" uid="uid://b3ruqvkh4luxh" path="res://assets/sprites/drone_sheet.png" id="1_e1pno"]
 [ext_resource type="Script" uid="uid://5gun5hsvkyh8" path="res://scripts/drone.gd" id="1_knnud"]
+[ext_resource type="AudioStream" uid="uid://bh7hol3drv0cg" path="res://assets/sounds/drone01.wav" id="3_umx5g"]
+[ext_resource type="AudioStream" uid="uid://cv5v4mhgj66ab" path="res://assets/sounds/drone02.wav" id="4_k1p8w"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4niel"]
 atlas = ExtResource("1_e1pno")
@@ -38,5 +40,13 @@ frame_progress = 0.124802
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_dil0n")
+
+[node name="DroneSound01" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_umx5g")
+volume_db = -20.0
+
+[node name="DroneSound02" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_k1p8w")
+volume_db = -30.0
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

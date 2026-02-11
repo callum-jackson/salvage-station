@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://lpf27a3lu7d3"]
+[gd_scene load_steps=5 format=3 uid="uid://lpf27a3lu7d3"]
 
 [ext_resource type="Script" uid="uid://cmy08enycoalk" path="res://scripts/laser_beam_cont.gd" id="1_yvhkr"]
+[ext_resource type="AudioStream" uid="uid://cjytc6772qblk" path="res://assets/sounds/laser.wav" id="2_3vdkm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5ua82"]
 size = Vector2(200, 2)
@@ -37,5 +38,10 @@ offset_top = -2.0
 offset_right = 2.0
 offset_bottom = 2.0
 color = Color(0.125488, 0.180389, 0.215683, 1)
+
+[node name="LaserSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_3vdkm")
+volume_db = -20.0
+autoplay = true
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
