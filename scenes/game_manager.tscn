@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://byhqphmmfy4d4"]
+
+[ext_resource type="Script" uid="uid://rxrxf1ejh4i0" path="res://scripts/game_manager.gd" id="1_glms7"]
+[ext_resource type="AudioStream" uid="uid://csv2q8buxjujv" path="res://assets/sounds/death.wav" id="1_wrkti"]
+
+[node name="GameManager" type="Node"]
+script = ExtResource("1_glms7")
+
+[node name="DeathSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_wrkti")
+volume_db = 0.005

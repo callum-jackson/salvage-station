@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Salvage Station"
-run/main_scene="res://scenes/level_01.tscn"
+run/main_scene="res://scenes/start.tscn"
 config/features=PackedStringArray("4.5", "Mobile")
 boot_splash/bg_color=Color(0.141174, 0.139999, 0.139999, 1)
 config/icon="res://icon.svg"
@@ -19,7 +19,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 game_state="*res://scripts/game_state.gd"
-game_manager="*res://scripts/game_manager.gd"
+music_player="*res://scenes/music_player.tscn"
+game_manager="*res://scenes/game_manager.tscn"
 
 [display]
 
@@ -91,14 +92,13 @@ project/editorState=[{
 "path": "res://scripts/dash_thrusters.gd",
 "type": "file"
 }, {
-"column": 20,
-"current": true,
+"column": 0,
 "line": 11,
 "path": "res://scripts/drone.gd",
 "type": "file"
 }, {
 "column": 0,
-"line": 30,
+"line": 0,
 "path": "res://scripts/electric_gate.gd",
 "type": "file"
 }, {
@@ -108,12 +108,13 @@ project/editorState=[{
 "type": "file"
 }, {
 "column": 0,
-"line": 10,
+"line": 0,
 "path": "res://scripts/fuel_cell.gd",
 "type": "file"
 }, {
 "column": 0,
-"line": 0,
+"current": true,
+"line": 70,
 "path": "res://scripts/game_manager.gd",
 "type": "file"
 }, {
@@ -122,8 +123,8 @@ project/editorState=[{
 "path": "res://scripts/game_state.gd",
 "type": "file"
 }, {
-"column": 0,
-"line": 46,
+"column": 17,
+"line": 80,
 "path": "res://scripts/player.gd",
 "type": "file"
 }, {
@@ -167,3 +168,4 @@ project/editorState=[{
 "path": "res://scripts/start.gd",
 "type": "file"
 }]
+project/xogot_game_id="1067_salvage-station"

@@ -58,6 +58,8 @@ func died() -> void:
 	
 	var current_scene_root = get_tree().root.get_child(get_tree().root.get_child_count() - 1)
 	current_scene_root.get_node("Player").queue_free()
+	$DeathSound.play()
+	await $DeathSound.finished
 	current_scene_root.get_node("DeathOverlay").show_overlay()
 
 func _on_fuel_cell_hit() -> void:

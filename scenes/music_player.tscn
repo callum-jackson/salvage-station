@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://brgk5o20ffeho"]
+
+[ext_resource type="AudioStream" uid="uid://kq1dm80fibdv" path="res://assets/sounds/background.mp3" id="1_jxdhu"]
+
+[node name="MusicPlayer" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_jxdhu")
+volume_db = -10.0
+autoplay = true
